@@ -165,6 +165,7 @@ section{
     margin-bottom: 1.5rem;
     line-height: 1.8rem;
     color: var(--2nd-main-color);
+    padding-top: 15px;
 }
 .count {
     margin-bottom: 2rem;
@@ -353,6 +354,7 @@ section{
         text-align: center;
         margin-top: 80px;
         height: 100vh;
+        padding-left: 0;
     }
     .home-text p{
         max-width: 100%;
