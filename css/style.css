@@ -403,23 +403,7 @@ section{
     .about-text p{
         max-width: 100%;
     }
-    .about-img {
-        order: 2;
-    }
-    .box-img{
-        align-items: center;
 
-    }
-    .box-img img{
-        width: 50vw;
-
-    }
     
-    .port-content{
-     display: inline-block;
-     width: 80vw;
-     height: 80vw;
-     align-items: center;
 
-    }
 }
