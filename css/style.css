@@ -403,7 +403,20 @@ section{
     .about-text p{
         max-width: 100%;
     }
+    .box-img{
+        align-items: center;
 
+    }
+    .box-img img{
+        width: 50vw;
+
+    }
+    .port-content{
+        display: inline-block;
+    }
+    .services{
+        margin-top: 200px;
+    }
     
 
 }
