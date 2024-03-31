@@ -22,8 +22,14 @@
             <li><a href="#services">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#resume">Resumo</a></li>
+            <li><a href="#articles">Artigos</a></li>
          </ul>
       </header>
+      <article>
+        <button class="scrolltop" onclick="backTop()">
+            <i class='bx bx-chevron-down-circle'></i>
+        </button>
+      </article>
       <!----------- start home------------------>
       <section class="home" id="home">
          <div class="home-text">
@@ -49,8 +55,8 @@
             <div class="row">
                <i class='bx bx-desktop'></i>
                <h3>Front End</h3>
-               <p>Desenvolvo sistemas e Sites</p>
-               <p>Tecnologias & Ferramentas: HTML, CSS, Javascript, Angular.</p>
+               <p>Desenvolvo sistemas, Sites e Testes automatizados </p>
+               <p>Tecnologias & Ferramentas: HTML, CSS, Javascript, Angular, Cypress teste end-to-end.</p>
                <div class="icon-container">
                   <i class='bx bxl-angular'></i>
                   <i class='bx bxl-css3' ></i>
@@ -62,7 +68,7 @@
                <i class='bx bx-cast'></i>
                <h3>Back End</h3>
                <p>Desenvolvo Webservices, APIs e Testes automatizados </p>
-               <p>Tecnologias & Ferramentas: Cypress, C#, .NET Framework, .NET Core, SQL Server, MySql, JSON, GIT, GitLab, GitHub, Azure Devops.</p>
+               <p>Tecnologias & Ferramentas: Cypress teste API e unidade, C#, .NET Framework, .NET Core, SQL Server, GIT, Azure Devops.</p>
                <div class="icon-container">
                   <i class='bx bxs-data' ></i>
                   <i class='bx bxl-gitlab'></i>
@@ -73,7 +79,7 @@
          </div>
       </section>
       <!----------- cta------------------>
-      <section class="cta">
+      <section class="cta" id="projetos">
          <h4>Todos os projetos no GitHub.</h4>
          <h2>Comece aqui!</h2>
          <a href="https://github.com/cinthiabs" target="_blank" class="btn">Repositórios no GitHub</a>
@@ -85,64 +91,60 @@
          </div>
          <div class="resume-content">
             <div class="box">
+                <i class='bx bx-desktop'></i>
                <h6>Dezembro 2020 - Presente </h6>
-               <h4>Systems Developer </h4>
-               <p>Desenvolvimento, manutenção em sistemas e implantação de clientes.</p>
-               <h5>Edesoft - São Paulo</h5>
+               <h4>Desenvolvedora de Sistemas Pleno</h4>
+               <p>Desenvolvimento e melhorias em sistemas internos usando C#/.NET core, Angular, SQL Server.
+                <br>
+                Desenvolvimento de cenários de teste (regressão, unidade e funcionais) utilizando Test Plan e Pipeline no DevOps.</p>
+               <h5>Edesoft</h5>
             </div>
             <div class="box">
+                <i class='bx bx-desktop'></i>
+                <h6>Dezembro 2020 - Junho 2023 </h6>
+                <h4>Desenvolvedora .NET</h4>
+                <p>Desenvolvimento e melhorias em sistemas internos usando C#/.NET core, Angular, SQL Server.
+                <br>
+                Importação e exportação de dados, com xml, txt, csv, json, APIs, WebService e conexão com FTP e SFTP.
+                <h5>Sequoia</h5>
+             </div>
+            <div class="box">
+                <i class='bx bx-desktop'></i>
                <h6>Maio 2019 - Dezembro 2020 </h6>
                <h4>Estagiária - Analista de Suporte Técnico</h4>
-               <p>Suporte aos usuários da área de TI</p>
+               <p>Acompanhamento de suporte aos usuários na área de TI. Abertura do incidente BMC Remedy resolvendo problemas técnicos, Controle remoto através das ferramentas Citrix VDI e VPN.</p>
                <h5>Cast Group</h5>
             </div>
             <div class="box">
+                <i class='bx bx-book-open'></i>
+                <h6>Dezembro 2023  - 2024 </h6>
+                <h4>Engenharia de Sofware com Ênfase em Qualidade</h4>
+                <p>Pós-graduação - Em andamento</p>
+                <h5>Vincit</h5>
+             </div>
+            <div class="box">
+               <i class='bx bx-book-open'></i>
                <h6>Janeiro 2019  - 2021 </h6>
                <h4>Gestão de Tecnologia da Informação </h4>
-               <p>Formada</p>
+               <p>Tecnólogo - Formada</p>
                <h5>Fatec Mauá</h5>
             </div>
             <div class="box">
-               <h6>Janeiro 2021 - Fevereiro 2021</h6>
-               <h4>SQL Server Developer </h4>
-               <p>Programação com Stored Procedure SQL Server 2017.
-               </p>
-               <h5>Udemy</h5>
-            </div>
-            <div class="box">
-               <h6>Abril 2020  - Junho 2020</h6>
-               <h4>Web Design Completo </h4>
-               <p>Desenvolvimento de sites aplicando HTML, CSS e Javascript</p>
+               <i class='bx bx-book-open'></i>
+               <h6>Janeiro 2024</h6>
+               <h4>Clean Architecture Essencial - ASP .NET Core com C#</h4>
+               <p>Concluído</p>
                <h5>Udemy</h5>
             </div>
          </div>
       </section>
-      <!----------- START service------------------>
-      <section class="services" id="services">
-         <div class="center">
-            <h3>Artigos Publicados</h3>
-         </div>
-         <div class="service-content">
-            <div class="row">
-               <i class='bx bx-desktop'></i>
-               <h3>Front End</h3>
-               <p>Desenvolvo sistemas e Sites</p>
-               <p>Tecnologias & Ferramentas: HTML, CSS, Javascript, Angular.</p>
-            </div>
-            <div class="row">
-               <i class='bx bx-cast'></i>
-               <h3>Back End</h3>
-               <p>Desenvolvo Webservices, APIs e Testes automatizados </p>
-               <p>Tecnologias & Ferramentas: Cypress, C#, .NET Framework, .NET Core, SQL Server, MySql, JSON, GIT, GitLab, GitHub, Azure Devops.</p>
-            </div>
-            <div class="row">
-               <i class='bx bx-cast'></i>
-               <h3>Back End</h3>
-               <p>Desenvolvo Webservices, APIs e Testes automatizados </p>
-               <p>Tecnologias & Ferramentas: Cypress, C#, .NET Framework, .NET Core, SQL Server, MySql, JSON, GIT, GitLab, GitHub, Azure Devops.</p>
-            </div>
-         </div>
-      </section>
+     <!----------- Articles------------------>
+     <section class="cta" id="articles">
+        <h4>Todos os artigos publicados</h4>
+        <h2>Leituras rápidas!</h2>
+        <a href="https://dev.to/cinthiabs" target="_blank" class="btn">DEV Community</a>
+     </section>
+
       <div class="copyright">
          <p>Feito por Cinthia Barbosa - 2022 - 2024</p>
       </div>
