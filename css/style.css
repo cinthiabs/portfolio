@@ -9,7 +9,8 @@
     scroll-padding-top:2rem;
 }
 :root{
-    --bg-color: #10101a;
+    --bg-color-icon: #2a293b;
+    --bg-color: #10101a; 
     --main-color2:#2fbf71;
     --main-color:#FE4370;
     --2nd-main-color: #ffffffcc;
@@ -73,21 +74,21 @@ section{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 6rem;
     align-items: center;
-    padding-left: 90px;
+    padding-left: 100px;
 
 }
 .home-img img {
     max-width: 100%;
     width: 600px;
     height: auto;
+    border-radius: 100%;
+    float: right;
 }
 .home-text h5{
     color: var(--text-color);
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     margin:  0 0 20px;
-  
-
 }
 .home-text h1{
     font-size: 57px;
@@ -105,7 +106,7 @@ section{
    
 }
 .home-text p{
-    max-width: 470px;
+    max-width: 700px;
     font-size: var(--p-font);
     font-weight: 300;
     line-height: 2rem;
@@ -131,6 +132,32 @@ section{
     background: var(--text-color);
     color: var(--main-color);
     box-shadow: 4px 4px var(--main-color);
+}
+.scrolltop{
+    outline: none;
+    border: 0;
+    padding: 8px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+}
+.scrolltop.scroll{
+    opacity: 1;
+    visibility: visible;
+}
+.scrolltop i{
+    font-size: 40px;
+    color: var(--main-color);
+    transform: rotate(180deg);
 }
 .about{
     display: grid;
@@ -192,12 +219,31 @@ section{
     font-weight: 300;
     letter-spacing: 6px;
 }
+
+
 .service-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 4.4rem;
+}
+.icon-container{
+    height: 0px;
+
+}
+.icon-container i{
+    margin: 0 10px 0 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    max-width: 50px;
+    max-height: 50px;
+    background: var(--bg-color-icon);
+    border-radius: 5px;  
+    margin-left: 0;
+    margin-bottom: 10px;
+
 }
 .row{
     background: #0b0b13;
@@ -220,6 +266,7 @@ section{
     font-size: 18px;
     color: var(--2nd-main-color);
     line-height: 30px;
+    margin-bottom: 10px;
 }
 .row:hover{
     transform: translateY(-15px);
@@ -282,6 +329,10 @@ section{
     font-size: 14px;
     font-weight: 500;
     color: var(--2nd-main-color);
+}
+.box i{
+    color: var(--main-color);
+    margin-bottom: 10px;
 }
 .center h4{
     margin-top: 10px;
