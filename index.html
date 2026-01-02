@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,12 +18,16 @@
          <a href="#" class="logo" >Cinthia<span> Barbosa</span></a>
          <div class="bx bx-menu" id="menu-icon"></div>
          <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#resume">Resumo</a></li>
-            <li><a href="#articles">Artigos</a></li>
+            <li><a href="#home" data-i18n="nav-home">Home</a></li>
+            <li><a href="#skills" data-i18n="nav-skills">Habilidades</a></li>
+            <li><a href="#projects" data-i18n="nav-projects">Projetos</a></li>
+            <li><a href="#resume" data-i18n="nav-resume">Resumo</a></li>
+            <li><a href="#articles" data-i18n="nav-articles">Artigos</a></li>
          </ul>
+         <select id="language-select">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+         </select>
       </header>
       <article>
         <button class="scrolltop" onclick="backTop()">
@@ -33,13 +37,13 @@
       <!----------- start home------------------>
       <section class="home" id="home">
          <div class="home-text">
-            <h5><span>Quem sou</span></h5>
+            <h5><span data-i18n="who-am-i">Quem sou</span></h5>
             <h1>Cinthia Barbosa</h1>
-            <h6>Desenvolvedora de Sistemas</h6>
-            <p>Sou formada em Gestão de Tecnologia pós-graduada em Engenharia de Software. Desde que comecei na área de desenvolvimento, descobri minha paixão pela tecnologia, especialmente no desenvolvimento backend. Estou em constante busca por desafios que me permitam crescer e evoluir profissionalmente!</p>
+            <h6 data-i18n="developer">Desenvolvedora de Sistemas</h6>
+            <p data-i18n="intro-para">Sou formada em Gestão de Tecnologia pós-graduada em Engenharia de Software. Desde que comecei na área de desenvolvimento, descobri minha paixão pela tecnologia, especialmente no desenvolvimento backend. Estou em constante busca por desafios que me permitam crescer e evoluir profissionalmente!</p>
             <div class="main-btn">
-               <a href="https://www.linkedin.com/in/cinthiabs/" target="_blank" class="btn">Linkedin</a>
-               <a href="mailto:cinthiabarbosa8d@outlook.com" class="btn">E-mail</a>
+               <a href="https://www.linkedin.com/in/cinthiabs/" target="_blank" class="btn" data-i18n="linkedin">Linkedin</a>
+               <a href="mailto:cinthiabarbosa8d@outlook.com" class="btn" data-i18n="email">E-mail</a>
             </div>
          </div>
          <div class="home-img">
@@ -49,14 +53,14 @@
       <!----------- START service------------------>
       <section class="services" id="skills">
          <div class="center">
-            <h3>Habilidades</h3>
+            <h3 data-i18n="skills-title">Habilidades</h3>
          </div>
          <div class="service-content">
             <div class="row">
                <i class='bx bx-desktop'></i>
-               <h3>Front End</h3>
-               <p>Desenvolvo sistemas, Sites e Testes automatizados </p>
-               <p>Tecnologias & Ferramentas: HTML, CSS, Javascript, Angular, Cypress end-to-end.</p>
+               <h3 data-i18n="front-end">Front End</h3>
+               <p data-i18n="front-desc1">Desenvolvo sistemas, Sites e Testes automatizados </p>
+               <p data-i18n="front-tech">Tecnologias & Ferramentas: HTML, CSS, Javascript, Angular, Cypress end-to-end.</p>
                <div class="icon-container">
                   <i class='bx bxl-angular'></i>
                   <i class='bx bxl-css3' ></i>
@@ -66,9 +70,9 @@
             </div>
             <div class="row">
                <i class='bx bx-cast'></i>
-               <h3>Back End</h3>
-               <p>Desenvolvo APIs, BFFs, Workers e Testes automatizados </p>
-               <p>Tecnologias & Ferramentas: PHP, Csharp, .NET Framework, .NET Core, SQL Server, MySql, Kafka, RabbitMQ, XUnit, GIT.</p>
+               <h3 data-i18n="back-end">Back End</h3>
+               <p data-i18n="back-desc1">Desenvolvo APIs, BFFs, Workers e Testes automatizados </p>
+               <p data-i18n="back-tech">Tecnologias & Ferramentas: PHP, Csharp, .NET Framework, .NET Core, SQL Server, MySql, Kafka, RabbitMQ, XUnit, GIT.</p>
                <div class="icon-container">
                   <i class='bx bxs-data' ></i>
                   <i class='bx bxl-gitlab'></i>
@@ -80,21 +84,21 @@
       </section>
       <!----------- cta projetos------------------>
       <section class="cta" id="projects">
-         <h4>Todos os projetos no GitHub.</h4>
-         <h2>Comece por aqui!</h2>
-         <a href="https://github.com/cinthiabs" target="_blank" class="btn">Repositórios no GitHub</a>
+         <h4 data-i18n="projects-h4">Todos os projetos no GitHub.</h4>
+         <h2 data-i18n="projects-h2">Comece por aqui!</h2>
+         <a href="https://github.com/cinthiabs" target="_blank" class="btn" data-i18n="github-repos">Repositórios no GitHub</a>
       </section>
       <!----------- START resume------------------>
       <section class="resume" id="resume">
          <div class="center">
-            <h3>Experiência & Formação</h3>
+            <h3 data-i18n="resume-title">Experiência & Formação</h3>
          </div>
          <div class="resume-content">
             <div class="box">
-                <i class='bx bx-desktop'> Experiência </i>
-               <h6>Agosto 2024 - Presente </h6>
-               <h4>Desenvolvedora de Software Pleno</h4>
-               <p>Desenvolvimento e melhorias em sistemas internos usando RESTful APIs .NET Core (CQRS, DDD, BFF, Microservices).
+                <i class='bx bx-desktop'><span data-i18n="experience"> Experiência </span></i>
+               <h6 data-i18n="date1">Agosto 2024 - Presente </h6>
+               <h4 data-i18n="job1">Desenvolvedora de Software Pleno</h4>
+               <p data-i18n="desc1">Desenvolvimento e melhorias em sistemas internos usando RESTful APIs .NET Core (CQRS, DDD, BFF, Microservices).
                   <br>
                   Integração com API Gateways (AWS, Apigee, Sensedia), Monitoramento e observabilidade com DataDog.
                   <br>
@@ -104,10 +108,10 @@
                <h5>Localiza</h5>
             </div>
             <div class="box">
-                <i class='bx bx-desktop'> Experiência </i>
-               <h6>Dezembro 2020 - Julho 2024 </h6>
-               <h4>Desenvolvedora de Sistemas Pleno</h4>
-               <p>Desenvolvimento e melhorias em sistemas internos usando .NET Framework, .NET core, Angular, SQL Server.
+                <i class='bx bx-desktop'><span data-i18n="experience"> Experiência </span></i>
+               <h6 data-i18n="date2">Dezembro 2020 - Julho 2024 </h6>
+               <h4 data-i18n="job2">Desenvolvedora de Sistemas Pleno</h4>
+               <p data-i18n="desc2">Desenvolvimento e melhorias em sistemas internos usando .NET Framework, .NET core, Angular, SQL Server.
                   <br>
                   Desenvolvimento de cenários de teste (regressão, unidade e funcionais).
                   <br>
@@ -116,10 +120,10 @@
                <h5>Edesoft</h5>
             </div>
             <div class="box">
-                <i class='bx bx-desktop'> Experiência </i>
-                <h6>Dezembro 2020 - Junho 2023 </h6>
-                <h4>Desenvolvedora de Sistemas Junior</h4>
-                <p>Desenvolvimento e melhorias em sistemas internos usando .NET Framework, .NET core, Angular, SQL Server.
+                <i class='bx bx-desktop'><span data-i18n="experience"> Experiência </span></i>
+                <h6 data-i18n="date3">Dezembro 2020 - Junho 2023 </h6>
+                <h4 data-i18n="job3">Desenvolvedora de Sistemas Junior</h4>
+                <p data-i18n="desc3">Desenvolvimento e melhorias em sistemas internos usando .NET Framework, .NET core, Angular, SQL Server.
                   <br>
                   Importação e exportação de dados, com xml, txt, csv, json, através de Stored Procedures e workers. 
                   <br>
@@ -128,37 +132,37 @@
                 <h5>Sequoia</h5>
              </div>
             <div class="box">
-                <i class='bx bx-desktop'> Experiência </i>
-               <h6>Maio 2019 - Dezembro 2020 </h6>
-               <h4>Estagiária - Analista de Suporte Técnico</h4>
-               <p>Acompanhamento de suporte aos usuários na área de TI. Abertura do incidente BMC Remedy resolvendo problemas técnicos, Controle remoto através das ferramentas Citrix VDI e VPN.</p>
+                <i class='bx bx-desktop'><span data-i18n="experience"> Experiência </span></i>
+               <h6 data-i18n="date4">Maio 2019 - Dezembro 2020 </h6>
+               <h4 data-i18n="job4">Estagiária - Analista de Suporte Técnico</h4>
+               <p data-i18n="desc4">Acompanhamento de suporte aos usuários na área de TI. Abertura do incidente BMC Remedy resolvendo problemas técnicos, Controle remoto através das ferramentas Citrix VDI e VPN.</p>
                <h5>Cast Group</h5>
             </div>
             <div class="box">
-                <i class='bx bx-book-open'> Formação </i>
-                <h6>Dezembro 2023 - 2024 </h6>
-                <h4>Engenharia de Sofware com Ênfase em Qualidade</h4>
-                <p>Pós-graduação - Formada</p>
+                <i class='bx bx-book-open'><span data-i18n="education"> Formação </span></i>
+                <h6 data-i18n="date5">Dezembro 2023 - 2024 </h6>
+                <h4 data-i18n="edu1">Engenharia de Sofware com Ênfase em Qualidade</h4>
+                <p data-i18n="edu-desc1">Pós-graduação - Formada</p>
                 <h5>Vincit</h5>
              </div>
             <div class="box">
-               <i class='bx bx-book-open'> Formação </i>
-               <h6>Janeiro 2019 - 2021 </h6>
-               <h4>Gestão de Tecnologia da Informação </h4>
-               <p>Tecnólogo - Formada</p>
+               <i class='bx bx-book-open'><span data-i18n="education"> Formação </span></i>
+               <h6 data-i18n="date6">Janeiro 2019 - 2021 </h6>
+               <h4 data-i18n="edu2">Gestão de Tecnologia da Informação </h4>
+               <p data-i18n="edu-desc2">Tecnólogo - Formada</p>
                <h5>Fatec Mauá</h5>
             </div>
          </div>
       </section>
      <!----------- Articles------------------>
      <section class="cta" id="articles">
-        <h4>Todos os artigos publicados</h4>
-        <h2>Leituras rápidas!</h2>
-        <a href="https://dev.to/cinthiabs" target="_blank" class="btn">DEV Community</a>
+        <h4 data-i18n="articles-h4">Todos os artigos publicados</h4>
+        <h2 data-i18n="articles-h2">Leituras rápidas!</h2>
+        <a href="https://dev.to/cinthiabs" target="_blank" class="btn" data-i18n="dev-community">DEV Community</a>
      </section>
 
       <div class="copyright">
-         <p>Feito por Cinthia Barbosa - 2022 - 2026</p>
+         <p data-i18n="copyright">Feito por Cinthia Barbosa - 2022 - 2026</p>
       </div>
       <script src="https://unpkg.com/scrollreveal"></script>
       <!----------- link to javascript------------------>

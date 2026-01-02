@@ -63,6 +63,18 @@ span{
     cursor: pointer;
     display: none;
 }
+#language-select{
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--main-color);
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px;
+}
+#language-select option{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
 section{
     padding: 120px 14%;
 }
